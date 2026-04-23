@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindSnap — Privacy Policy</title>
     <style>
-        /* ---- Reset & Base ---- */
         * {
             margin: 0;
             padding: 0;
@@ -20,102 +19,95 @@
             line-height: 1.6;
         }
 
-        /* ---- Header ---- */
         header {
-            background: linear-gradient(135deg, #6B46C1, #9F7AEA);
+            background: linear-gradient(135deg, #4A0080, #C2185B);
             color: white;
             padding: 60px 20px;
             text-align: center;
         }
 
         .app-icon {
-            width: 80px;
-            height: 80px;
+            width: 90px;
+            height: 90px;
             background: rgba(255,255,255,0.2);
-            border-radius: 20px;
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            font-size: 40px;
+            font-size: 48px;
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 8px;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.85;
             max-width: 500px;
             margin: 0 auto;
         }
 
-        /* ---- Main Content ---- */
         main {
-            max-width: 800px;
+            max-width: 780px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        /* ---- Big Promise Banner ---- */
+        /* ---- Promise Banner ---- */
         .promise-banner {
             background: white;
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 32px;
-            margin-bottom: 32px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 24px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
             text-align: center;
         }
 
         .promise-banner .shield {
-            font-size: 48px;
+            font-size: 52px;
             margin-bottom: 16px;
         }
 
         .promise-banner h2 {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #1d1d1f;
             margin-bottom: 8px;
         }
 
         .promise-banner p {
             color: #6e6e73;
-            font-size: 1rem;
-            max-width: 500px;
-            margin: 0 auto 24px;
+            margin-bottom: 24px;
         }
 
-        /* ---- Promise Pills ---- */
         .promise-pills {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .pill {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: #f5f5f7;
             border-radius: 100px;
             padding: 8px 16px;
             font-size: 0.85rem;
             font-weight: 600;
         }
 
-        .pill.green { background: #d1fae5; color: #065f46; }
-        .pill.blue  { background: #dbeafe; color: #1e40af; }
-        .pill.purple{ background: #ede9fe; color: #5b21b6; }
+        .pill.green  { background: #d1fae5; color: #065f46; }
+        .pill.blue   { background: #dbeafe; color: #1e40af; }
+        .pill.purple { background: #ede9fe; color: #5b21b6; }
 
         /* ---- Section Cards ---- */
         .section-card {
             background: white;
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 28px;
             margin-bottom: 20px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
@@ -129,9 +121,9 @@
         }
 
         .section-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -144,10 +136,12 @@
         .icon-purple { background: #ede9fe; }
         .icon-orange { background: #ffedd5; }
         .icon-teal   { background: #ccfbf1; }
+        .icon-pink   { background: #fce7f3; }
 
         .section-header h2 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 700;
+            color: #1d1d1f;
         }
 
         /* ---- Lists ---- */
@@ -155,7 +149,7 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         .check-list li {
@@ -164,15 +158,11 @@
             gap: 10px;
             font-size: 0.95rem;
             color: #3d3d3f;
+            line-height: 1.5;
         }
 
-        .check-list li .icon {
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .check-yes { color: #10b981; }
-        .check-no  { color: #ef4444; }
+        .check-yes { color: #10b981; font-size: 1.1rem; }
+        .check-no  { color: #ef4444; font-size: 1.1rem; }
 
         /* ---- Two column layout ---- */
         .two-col {
@@ -184,49 +174,47 @@
 
         @media (max-width: 600px) {
             .two-col { grid-template-columns: 1fr; }
-            header h1 { font-size: 1.6rem; }
+            header h1 { font-size: 1.5rem; }
         }
 
         .col-box {
-            background: #f5f5f7;
-            border-radius: 12px;
-            padding: 16px;
+            background: #f9f9fb;
+            border-radius: 14px;
+            padding: 18px;
         }
 
         .col-box h3 {
             font-size: 0.9rem;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
 
         .col-box.not-collected h3 { color: #ef4444; }
         .col-box.collected h3     { color: #10b981; }
 
-        /* ---- Contact Section ---- */
+        /* ---- Contact ---- */
         .contact-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #6B46C1;
+            color: #6B21A8;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.95rem;
-            margin-top: 8px;
-            padding: 10px 16px;
+            margin-top: 12px;
+            padding: 12px 20px;
             background: #ede9fe;
-            border-radius: 10px;
+            border-radius: 12px;
             transition: background 0.2s;
         }
 
-        .contact-link:hover {
-            background: #ddd6fe;
-        }
+        .contact-link:hover { background: #ddd6fe; }
 
-        /* ---- App Store Badge ---- */
+        /* ---- App Store Section ---- */
         .app-store-section {
-            background: linear-gradient(135deg, #6B46C1, #9F7AEA);
-            border-radius: 16px;
-            padding: 32px;
+            background: linear-gradient(135deg, #4A0080, #C2185B);
+            border-radius: 20px;
+            padding: 36px;
             text-align: center;
             color: white;
             margin-bottom: 20px;
@@ -240,24 +228,22 @@
 
         .app-store-section p {
             opacity: 0.85;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .app-store-btn {
             display: inline-block;
             background: white;
-            color: #6B46C1;
+            color: #4A0080;
             text-decoration: none;
             font-weight: 700;
-            padding: 12px 28px;
+            padding: 14px 32px;
             border-radius: 100px;
             font-size: 0.95rem;
             transition: transform 0.2s;
         }
 
-        .app-store-btn:hover {
-            transform: scale(1.03);
-        }
+        .app-store-btn:hover { transform: scale(1.03); }
 
         /* ---- Footer ---- */
         footer {
@@ -268,7 +254,7 @@
         }
 
         footer a {
-            color: #6B46C1;
+            color: #6B21A8;
             text-decoration: none;
         }
 
@@ -276,20 +262,31 @@
             color: #3d3d3f;
             font-size: 0.95rem;
             margin-bottom: 10px;
+            line-height: 1.6;
         }
 
         .last-updated {
             font-size: 0.8rem;
             color: #6e6e73;
             margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #f0f0f5;
+        }
+
+        .badge-green {
+            display: inline-block;
+            background: #d1fae5;
+            color: #065f46;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 100px;
         }
     </style>
 </head>
 <body>
 
-    <!-- ======================================================
-         HEADER
-    ====================================================== -->
+    <!-- HEADER -->
     <header>
         <div class="app-icon">🧠</div>
         <h1>MindSnap Privacy Policy</h1>
@@ -298,13 +295,12 @@
 
     <main>
 
-        <!-- ======================================================
-             BIG PROMISE BANNER
-        ====================================================== -->
+        <!-- PROMISE BANNER -->
         <div class="promise-banner">
             <div class="shield">🔒</div>
             <h2>Your Journal is 100% Private</h2>
-            <p>MindSnap was built from the ground up with one rule: your thoughts stay on your device, always.</p>
+            <p>MindSnap was built with one rule: your thoughts
+               stay on your device, always.</p>
             <div class="promise-pills">
                 <span class="pill green">✅ No Account Needed</span>
                 <span class="pill blue">📱 On-Device Only</span>
@@ -312,65 +308,59 @@
             </div>
         </div>
 
-        <!-- ======================================================
-             WHAT WE COLLECT
-        ====================================================== -->
+        <!-- WHAT WE COLLECT -->
         <div class="section-card">
             <div class="section-header">
                 <div class="section-icon icon-blue">📋</div>
                 <h2>What We Collect</h2>
             </div>
-
             <div class="two-col">
-                <!-- NOT Collected -->
                 <div class="col-box not-collected">
                     <h3>❌ We Do NOT Collect</h3>
                     <ul class="check-list">
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Your journal entries
                         </li>
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Your name or email
                         </li>
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Your location
                         </li>
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Device identifiers
                         </li>
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Usage analytics
                         </li>
                         <li>
-                            <span class="icon check-no">✗</span>
+                            <span class="check-no">✗</span>
                             Crash reports
                         </li>
                     </ul>
                 </div>
-
-                <!-- Stored Locally -->
                 <div class="col-box collected">
                     <h3>✅ Stored on YOUR Device</h3>
                     <ul class="check-list">
                         <li>
-                            <span class="icon check-yes">✓</span>
+                            <span class="check-yes">✓</span>
                             Journal entries you write
                         </li>
                         <li>
-                            <span class="icon check-yes">✓</span>
+                            <span class="check-yes">✓</span>
                             Mood analysis results
                         </li>
                         <li>
-                            <span class="icon check-yes">✓</span>
+                            <span class="check-yes">✓</span>
                             App preferences
                         </li>
                         <li>
-                            <span class="icon check-yes">✓</span>
+                            <span class="check-yes">✓</span>
                             Streak counter
                         </li>
                     </ul>
@@ -378,61 +368,72 @@
             </div>
         </div>
 
-        <!-- ======================================================
-             HOW DATA IS STORED
-        ====================================================== -->
+        <!-- HOW DATA IS STORED -->
         <div class="section-card">
             <div class="section-header">
                 <div class="section-icon icon-purple">💾</div>
-                <h2>How Data Is Stored</h2>
+                <h2>How Your Data Is Stored</h2>
             </div>
             <ul class="check-list">
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    All data is stored using Apple's SwiftData in an encrypted database on your iPhone.
+                    <span class="check-yes">✓</span>
+                    All data is stored in an encrypted database
+                    directly on your iPhone — nowhere else.
                 </li>
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    Protected by iOS encryption and your device passcode or Face ID.
+                    <span class="check-yes">✓</span>
+                    Your data is protected by iOS's built-in
+                    encryption and your device passcode or
+                    Face ID / Touch ID.
                 </li>
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    Deleting the app permanently removes all data from your device.
+                    <span class="check-yes">✓</span>
+                    Deleting the app permanently removes all
+                    your data from your device.
                 </li>
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    iCloud backup follows your own iOS backup settings — we don't control this.
+                    <span class="check-yes">✓</span>
+                    iCloud backup follows your own iOS backup
+                    settings — we have no access to it.
                 </li>
             </ul>
         </div>
 
-        <!-- ======================================================
-             AI & THIRD PARTY
-        ====================================================== -->
+        <!-- MOOD ANALYSIS -->
         <div class="section-card">
             <div class="section-header">
-                <div class="section-icon icon-orange">🤖</div>
-                <h2>AI & Third Party Services</h2>
+                <div class="section-icon icon-orange">🧠</div>
+                <h2>On-Device Mood Analysis</h2>
             </div>
             <ul class="check-list">
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    Mood analysis uses Apple's on-device NaturalLanguage framework. Your text never leaves your device.
+                    <span class="check-yes">✓</span>
+                    MindSnap analyses the mood of your journal
+                    entries to help you understand your emotions.
                 </li>
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    We use ZERO third-party SDKs — no Firebase, no Google Analytics, no Mixpanel, no ads.
+                    <span class="check-yes">✓</span>
+                    This analysis happens entirely on your device.
+                    Your journal text is never sent anywhere.
                 </li>
                 <li>
-                    <span class="icon check-yes">✓</span>
-                    Apple App Store Privacy Label: <strong style="color:#10b981">Data Not Collected</strong>
+                    <span class="check-yes">✓</span>
+                    No third-party analytics, advertising, or
+                    tracking services are used. Zero.
+                </li>
+                <li>
+                    <span class="check-yes">✓</span>
+                    <span>
+                        Apple App Store Privacy Label:
+                        <span class="badge-green">
+                            Data Not Collected
+                        </span>
+                    </span>
                 </li>
             </ul>
         </div>
 
-        <!-- ======================================================
-             YOUR RIGHTS
-        ====================================================== -->
+        <!-- YOUR RIGHTS -->
         <div class="section-card">
             <div class="section-header">
                 <div class="section-icon icon-teal">✋</div>
@@ -440,60 +441,69 @@
             </div>
             <ul class="check-list">
                 <li>
-                    <span class="icon">🗑️</span>
+                    <span>🗑️</span>
                     <div>
-                        <strong>Delete all data</strong> anytime via
-                        Settings → Clear All Journal Data
+                        <strong>Delete all data</strong> anytime
+                        via Settings → Clear All Journal Data
                     </div>
                 </li>
                 <li>
-                    <span class="icon">🔒</span>
+                    <span>🔒</span>
                     <div>
-                        <strong>Protect your journal</strong> with
-                        Face ID or Touch ID
+                        <strong>Protect your journal</strong>
+                        with Face ID or Touch ID
                     </div>
                 </li>
                 <li>
-                    <span class="icon">📱</span>
+                    <span>📌</span>
                     <div>
-                        <strong>Delete the app</strong> to permanently
-                        remove every piece of data
+                        <strong>Pin important entries</strong>
+                        to keep them at the top of your journal
                     </div>
                 </li>
                 <li>
-                    <span class="icon">✈️</span>
+                    <span>📱</span>
                     <div>
-                        <strong>Works offline</strong> — no internet
-                        connection ever required
+                        <strong>Delete the app</strong> to
+                        permanently remove every piece of data
+                    </div>
+                </li>
+                <li>
+                    <span>✈️</span>
+                    <div>
+                        <strong>Works offline</strong> — no
+                        internet connection ever required
                     </div>
                 </li>
             </ul>
         </div>
 
-        <!-- ======================================================
-             CONTACT
-        ====================================================== -->
+        <!-- CONTACT -->
         <div class="section-card">
             <div class="section-header">
-                <div class="section-icon icon-blue">✉️</div>
-                <h2>Contact</h2>
+                <div class="section-icon icon-pink">✉️</div>
+                <h2>Contact Us</h2>
             </div>
-            <p>Questions about this privacy policy? We'd love to hear from you.</p>
-            <!-- REPLACE with your actual email -->
-            <a href="mailto:solankipratik4094@gmail.com"
+            <p>
+                Have a question about your privacy or MindSnap?
+                We'd love to hear from you. We typically respond
+                within 24-48 hours.
+            </p>
+            <a href="mailto:mindsnap.772@gmail.com"
                class="contact-link">
-                ✉️ solankipratik4094@gmail.com
+                ✉️ mindsnap.772@gmail.com
             </a>
-            <p class="last-updated">Last updated: April 2025</p>
+            <p class="last-updated">
+                Last updated: April 2026 ·
+                Effective immediately upon download
+            </p>
         </div>
 
-        <!-- ======================================================
-             APP STORE SECTION
-        ====================================================== -->
+        <!-- APP STORE -->
         <div class="app-store-section">
             <h2>Download MindSnap</h2>
-            <p>Your private AI journal. On-device. Free.</p>
-            <!-- REPLACE href with your actual App Store link -->
+            <p>Your private smart journal. On-device. Free.</p>
+            <!-- UPDATE with real App Store link after submission -->
             <a href="#" class="app-store-btn">
                 📱 Download on App Store
             </a>
@@ -502,8 +512,12 @@
     </main>
 
     <footer>
-        <p>© 2025 Pratik Solanki · MindSnap</p>
-        <p>Made with ❤️ in Canada 🇨🇦</p>
+        <p>© 2026 MindSnap · Made with ❤️ in Canada 🇨🇦</p>
+        <p style="margin-top: 6px;">
+            <a href="mailto:mindsnap.772@gmail.com">
+                mindsnap.772@gmail.com
+            </a>
+        </p>
     </footer>
 
 </body>
