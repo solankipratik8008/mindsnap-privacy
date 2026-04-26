@@ -1,3 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MindSnap privacy policy for journal, goals, reminders, iCloud sync, Apple Health, speech, widgets, and app settings.">
+    <title>MindSnap Privacy Policy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <style>
+        :root {
+            --ink: #1d1d1f;
+            --muted: #5f6066;
+            --soft: #f6f4f8;
+            --card: #ffffff;
+            --line: #e9e5ee;
+            --purple: #5b21b6;
+            --purple-2: #8b5cf6;
+            --pink: #db2777;
+            --blue: #0ea5e9;
+            --green: #059669;
+            --orange: #ea580c;
+            --red: #dc2626;
+            --shadow: 0 16px 44px rgba(38, 22, 56, 0.11);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at top left, rgba(139, 92, 246, 0.16), transparent 28rem),
+                linear-gradient(180deg, #fbf8ff 0%, #f6f4f8 42%, #f8fafc 100%);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .hero {
+            color: white;
+            min-height: 420px;
+            padding: 42px 20px 72px;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(135deg, rgba(74, 0, 128, 0.96), rgba(194, 24, 91, 0.93)),
+                url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.15)' stroke-width='1'%3E%3Cpath d='M0 80h160M80 0v160'/%3E%3Ccircle cx='80' cy='80' r='36'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: auto, 160px 160px;
+        }
+
+        .hero-inner {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 70px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            letter-spacing: 0;
+        }
+
+        .brand-mark {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.17);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+            overflow: hidden;
+        }
+
+        .brand-mark img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.88);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 650;
+            padding: 8px 10px;
+            border-radius: 999px;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.14);
+        }
+
+        .hero-copy {
+            max-width: 760px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 999px;
+            padding: 8px 12px;
+            margin-bottom: 18px;
+            color: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.14);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            max-width: 720px;
+            font-size: clamp(2.3rem, 7vw, 5rem);
+            line-height: 0.98;
+            letter-spacing: 0;
+            margin-bottom: 18px;
+        }
+
+        .hero-copy p {
+            max-width: 680px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(1rem, 2vw, 1.18rem);
+        }
+
+        .hero-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 28px;
+        }
+
+        .hero-pill {
+            border-radius: 999px;
+            padding: 10px 14px;
+            color: white;
+            background: rgba(255, 255, 255, 0.16);
+            font-size: 0.9rem;
+            font-weight: 750;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+        }
+
+        main {
+            max-width: 980px;
+            margin: -46px auto 0;
+            padding: 0 20px 48px;
+            position: relative;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .summary-card,
+        .section-card,
+        .contact-card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+        }
+
+        .summary-card {
+            min-height: 138px;
+            padding: 22px;
+        }
+
+        .summary-card .icon {
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: 11px;
+            margin-bottom: 14px;
+            background: #ede9fe;
+        }
+
+        .summary-card h2 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .summary-card p,
+        .section-card p,
+        .contact-card p {
+            color: var(--muted);
+            font-size: 0.96rem;
+        }
+
+        .section-card {
+            padding: 30px;
+            margin-bottom: 18px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .section-icon {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+            border-radius: 14px;
+            font-size: 1.2rem;
+        }
+
+        .icon-purple { background: #ede9fe; }
+        .icon-blue { background: #e0f2fe; }
+        .icon-green { background: #dcfce7; }
+        .icon-orange { background: #ffedd5; }
+        .icon-pink { background: #fce7f3; }
+        .icon-slate { background: #e2e8f0; }
+
+        .section-header h2 {
+            font-size: 1.28rem;
+            line-height: 1.2;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .mini-panel {
+            background: #fbfafc;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .mini-panel h3 {
+            font-size: 0.98rem;
+            margin-bottom: 12px;
+        }
+
+        .mini-panel.positive h3 { color: var(--green); }
+        .mini-panel.negative h3 { color: var(--red); }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            color: #3d3d42;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 11px;
+            font-size: 0.95rem;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .yes,
+        .no {
+            flex: 0 0 auto;
+            font-weight: 900;
+            line-height: 1.4;
+        }
+
+        .yes { color: var(--green); }
+        .no { color: var(--red); }
+
+        .note {
+            margin-top: 16px;
+            padding: 16px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .note strong {
+            color: var(--ink);
+        }
+
+        .control-list li span:first-child {
+            width: 24px;
+            text-align: center;
+        }
+
+        .contact-card {
+            padding: 30px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-card h2 {
+            font-size: 1.22rem;
+            margin-bottom: 6px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 46px;
+            border-radius: 999px;
+            padding: 0 20px;
+            color: white;
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            font-weight: 800;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .updated {
+            color: #6e6e73;
+            font-size: 0.88rem;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+        }
+
+        footer {
+            color: #6e6e73;
+            text-align: center;
+            padding: 34px 20px 44px;
+            font-size: 0.88rem;
+        }
+
+        footer a {
+            color: var(--purple);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        @media (max-width: 760px) {
+            .nav {
+                align-items: flex-start;
+                margin-bottom: 52px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .summary,
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .hero {
+                min-height: 380px;
+                padding-bottom: 66px;
+            }
+
+            .section-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <nav class="nav" aria-label="Privacy policy sections">
+                <div class="brand">
+                    <span class="brand-mark">
+                        <img src="favicon.png" alt="MindSnap app icon">
+                    </span>
+                    <span>MindSnap</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#data">Data</a>
+                    <a href="#health">Apple Health</a>
+                    <a href="#icloud">iCloud</a>
+                    <a href="#controls">Controls</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <section class="hero-copy">
+                <div class="eyebrow">Privacy Policy · Human-readable</div>
+                <h1>Your journal and goals stay yours.</h1>
+                <p>MindSnap is a private journal and goal-tracking app. This policy explains how the app handles journal entries, mood analysis, goals, reminders, Apple Health progress, iCloud sync, speech, widgets, and app settings.</p>
+                <div class="hero-pills" aria-label="Privacy highlights">
+                    <span class="hero-pill">No account required</span>
+                    <span class="hero-pill">No third-party ad tracking</span>
+                    <span class="hero-pill">Apple Health is optional</span>
+                    <span class="hero-pill">Manual entry still works</span>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section class="summary" aria-label="Privacy summary">
+            <article class="summary-card">
+                <div class="icon">🔒</div>
+                <h2>Local-first</h2>
+                <p>Your journal, mood history, goals, reminders, progress, and preferences are stored by the app on your device.</p>
+            </article>
+            <article class="summary-card">
+                <div class="icon">☁️</div>
+                <h2>Private iCloud Sync</h2>
+                <p>If iCloud is available and enabled, app data may sync through Apple's CloudKit service to your iCloud account.</p>
+            </article>
+            <article class="summary-card">
+                <div class="icon">❤️</div>
                 <h2>Optional Health Data</h2>
                 <p>MindSnap reads selected Apple Health totals only after you grant permission, and only to update matching goals.</p>
             </article>
